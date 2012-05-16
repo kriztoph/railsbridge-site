@@ -14,9 +14,12 @@ Railsbridge::Application.configure do
   # Compress JavaScripts and CSS
   config.assets.compress = true
 
+  # Generate digests for assets URLs
+  config.assets.digest = true
+  
   # Specifies the header that your server uses for sending files
   # (comment out if your front-end server doesn't support this)
-  config.action_dispatch.x_sendfile_header = "X-Sendfile" # Use 'X-Accel-Redirect' for nginx
+  # config.action_dispatch.x_sendfile_header = "X-Sendfile" # Use 'X-Accel-Redirect' for nginx
 
   # Force all access to the app over SSL, use Strict-Transport-Security, and use secure cookies.
   # config.force_ssl = true
